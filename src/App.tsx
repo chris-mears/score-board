@@ -6,8 +6,8 @@ import {
   Link
 } from "react-router-dom";
 import { ChakraProvider } from '@chakra-ui/react'
-import ScoreBoard from './ScoreBoard';
-import Controller from "./Controller";
+import ScoreBoard from './Components/ScoreBoard/ScoreBoard';
+import Controller from "./Components/Controller/Controller";
 import './App.css';
 
 const App = () => {

@@ -11,7 +11,7 @@ const ScoreBoard = () => {
     useEffect(() => {
         function checkUserData() {
           const item = JSON.parse(localStorage.getItem('user-action-time') || '');
-      
+          console.log(item)
           if (item) {
             const timeReceived = new Date()
             console.log(item.timeStamp, JSON.stringify(timeReceived))
@@ -51,6 +51,7 @@ const ScoreBoard = () => {
               updateShouldSet={updateShouldSet}
               setShouldRun={setShouldRun}
           />
+          <div>Period: </div>
         </div>
       );
 };

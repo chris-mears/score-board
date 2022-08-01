@@ -31,7 +31,7 @@ const Clock = ({ periodTime, shouldRun, shouldSet, updateShouldSet, setShouldRun
         console.log('set useeffect', shouldSet, periodTime)
         if(shouldSet)
             setTime(periodTime * 60 * 1000);
-    }, [shouldSet])
+    }, [shouldSet, periodTime])
 
     useEffect(() => {
         console.log('run useeffect', shouldRun)
